@@ -26,11 +26,6 @@ namespace TheCodingLlamas.Models
             dbContext.Technologies.AddRange(technologies);
 
 
-            //Projects
-
-
-
-
             // Nikola Miličić
 
             var milicic = new Person("Nikola", "Miličić", 4, "Fakultet elektrotehnike i računarstva",
@@ -90,6 +85,20 @@ namespace TheCodingLlamas.Models
             //bukovac.Projects.Add();
 
             dbContext.Persons.Add(bukovac);
+
+
+
+
+            //Projects
+
+            var projects = new List<Project>()
+            {
+                new Project("Lego Master", "", 2016, "assets/images/lego.jpg", "",
+                "https://github.com/NMilicic/MasterBuilders", milicic.Id),
+            };
+
+            dbContext.Projects.AddRange(projects);
+
 
             dbContext.SaveChanges();
         }
