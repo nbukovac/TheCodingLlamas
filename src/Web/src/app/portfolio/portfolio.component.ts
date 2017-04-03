@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 export class PortfolioComponent implements OnInit {
 projects: Project;
   constructor(private http : Http) {
-    http.get('http://localhost:14924/api/projects').subscribe(result => {
+    http.get('/api/projects').subscribe(result => {
           this.projects = result.json();
         });
    }

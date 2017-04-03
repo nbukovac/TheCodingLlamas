@@ -10,7 +10,7 @@ export class AboutUsComponent implements OnInit {
 personsData: Person;
 
   constructor(private http:Http) {
-     http.get('http://localhost:14924/api/persons').subscribe(result => {
+     http.get('/api/persons').subscribe(result => {
           this.personsData = result.json();
         });
    }
