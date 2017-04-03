@@ -14,7 +14,11 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
         public TechnologySqlRepository(CodingLlamasDbContext dbContext)
         {
             _dbContext = dbContext;
-            Seed();
+
+            if (!_dbContext.Technologies.Any())
+            {
+                Seeder.SeedData(dbContext);
+            }
         }
 
         public Task<List<Technology>> GetAllTechnologies()

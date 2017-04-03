@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.CodeAnalysis.Emit;
 using Microsoft.EntityFrameworkCore;
 using TheCodingLlamas.Models;
 
@@ -15,6 +16,11 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
         public ProjectSqlRepository(CodingLlamasDbContext dbContext)
         {
             _dbContext = dbContext;
+
+            if (!_dbContext.Projects.Any())
+            {
+                Seeder.SeedData(dbContext);
+            }
         }
 
         public Task<List<Project>> GetAllProjects()
