@@ -20,24 +20,6 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
 
         private void Seed()
         {
-            var bukovac = new Person("Nikola", "Bukovac", 4,
-                "Fakultet elektrotehnike i računarstva", "https://www.linkedin.com/in/nikola-bukovac-ab017b120/",
-                "https://github.com/nbukovac", "nikola.bukovac@outlook.com",
-                "+385912371969",
-                "Nikola pulls classes and methods out of his sleeve and can easily turn any idea into code.",
-                "Code monkey", "assets/images/bukovac.jpg");
-            bukovac.Technologies.AddRange(new List<Technology>()
-            {
-                new Technology("C#"),
-                new Technology("Java"),
-                new Technology("Bash"),
-                new Technology("Python"),
-                new Technology("Swift"),
-                new Technology("C++")
-            });
-            bukovac.Projects.AddRange(new List<Project>());
-            Insert(bukovac);
-
             var milicic = new Person("Nikola", "Miličić", 4, "Fakultet elektrotehnike i računarstva",
                 "https://www.linkedin.com/in/nikola-miličić-33bab263/", "https://github.com/NMilicic",
                 "", "", 
@@ -66,6 +48,24 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
             });
             vrbanec.Projects.AddRange(new List<Project>());
             Insert(vrbanec);
+
+            var bukovac = new Person("Nikola", "Bukovac", 4,
+                "Fakultet elektrotehnike i računarstva", "https://www.linkedin.com/in/nikola-bukovac-ab017b120/",
+                "https://github.com/nbukovac", "nikola.bukovac@outlook.com",
+                "+385912371969",
+                "Nikola pulls classes and methods out of his sleeve and can easily turn any idea into code.",
+                "Code monkey", "assets/images/bukovac.jpg");
+            bukovac.Technologies.AddRange(new List<Technology>()
+            {
+                new Technology("C#"),
+                new Technology("Java"),
+                new Technology("Bash"),
+                new Technology("Python"),
+                new Technology("Swift"),
+                new Technology("C++")
+            });
+            bukovac.Projects.AddRange(new List<Project>());
+            Insert(bukovac);
         }
 
         public Task<List<Person>> GetAllPersons()
