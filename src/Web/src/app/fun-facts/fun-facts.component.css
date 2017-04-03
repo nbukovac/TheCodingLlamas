@@ -1,0 +1,42 @@
+
+.fun-facts {
+    background: #28ABE3;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.counter-item {
+    position:relative;
+    text-align:center;
+    margin-bottom: 40px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 3px #666;
+    padding: 40px;
+}
+
+.counter-item h5 {
+  text-align:center;
+  margin-bottom:0px;
+  color:#111;
+    font-size: 20px;
+}
+
+.counter-item i {
+    color: #28ABE3;
+  font-size:40px;
+    font-weight: 300;
+}
+
+
+.timer {
+    color: #28ABE3;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align:center;
+  line-height:80px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,63 @@
+
+.services-section {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+
+
+
+.service {
+	padding: 40px;
+	background-color: #fff;
+	box-shadow: 0 0 3px #ddd;
+	text-align: center;
+    margin-bottom: 30px;
+}
+
+.service i {
+	font-size:2.5em;
+    width: 80px;
+    height: 80px;
+    padding:25px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #28ABE3;
+    border: 1px solid #28ABE3;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.service .border {
+	margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.service h4 {
+    font-size: 15px;
+    margin-bottom: 13px;
+    color: #666;
+    font-weight: 300;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+}
+
+.service p {
+    color: #444;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.service:hover i {
+    background: #28ABE3;
+    color: #fff;
+}
+
+.service:hover .border {
+    margin: 0 30%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-color: #28ABE3;
+}

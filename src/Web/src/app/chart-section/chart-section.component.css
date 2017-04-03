@@ -1,0 +1,194 @@
+#skill-section {
+	background-color: #fff;
+	box-shadow: 0 0 3px #666;
+	padding: 30px 0 30px 50px;
+}
+
+/* progress bar */
+
+.skill-graph {
+    margin-bottom: 0px;
+}
+
+.skill-graph li {
+    float: left;
+    height: 390px;
+    margin-right: 37px;
+    width: 60px;
+    position: relative;
+}
+
+.after-li {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    height: 300px;
+}
+
+.singel-hr {
+    position: relative;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.skill-title,
+.skill-count {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #00bcd4;
+    font-weight: 400;
+    position: absolute;
+}
+
+.skill-count {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.skill-title {
+    font-size: 15px;
+}
+
+.skill-count {
+    top: -80px;
+}
+.skill-title {
+    bottom: 0;
+}
+
+.singel-hr-inner {
+    background-color: #00bcd4;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    border-radius: 2px;
+    height: 0px;
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.skill-visiable {
+    position: relative;
+}
+
+
+.root-sec {
+    position: relative;
+}
+
+.btn-wrapp {
+    position: absolute;
+    right:1.4%;
+    top:55.8%;
+}
+.btn-wrapp a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.btn-wrapp a:last-child {
+    margin-bottom: 0;
+}
+
+.skill-wrap .btn-wrapp {
+    bottom: 7.5%;
+    top: auto;
+    right: 4%;
+}
+
+
+
+/** Toggles & Accordion **/
+
+.custom-accordion {
+	background-color: #fff;
+	box-shadow: 0 0 3px #666;
+	padding: 30px;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+.panel {
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none !important
+}
+
+.panel-default > .panel-heading {
+	background: transparent;
+    border: 1px solid #111;
+    border-radius: none;
+    font-weight: 400;
+    width: 100%;
+}
+
+.panel-body {
+	padding: 15px 10px;
+    border: none !important;
+    color: #111;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background-color: transparent !important;
+}
+
+.panel-heading {
+	padding: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-title {
+	font-size: 14px;
+	font-weight: 400;
+    padding: 10px;
+    color: #666;
+}
+
+.panel-title a {
+	position: relative;
+	display: block;
+	padding: 6px 12px;
+	background-color: #fff;
+	box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+  	-webkit-box-shadow: none;
+	transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.panel-title a.collapsed {
+	color: #444;
+}
+
+.panel-title a.collapsed:hover {
+	color: #666;
+}
+
+.panel-title a .control-icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -11px;
+	transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+.panel-title a.collapsed .control-icon {
+    display: block;
+}
+
+.panel-title a i {
+	font-size: 22px;
+    padding-right: 5px;
+    color: #ff432e;
+}

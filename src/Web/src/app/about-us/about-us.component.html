@@ -1,0 +1,33 @@
+ <!-- Start About Us Section -->
+    <section id="about-us" class="about-us-section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title text-center">
+                           <h2>The team</h2>
+                            <p>Three coding llamas </p>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                
+               <div class="col-md-4 col-sm-4" *ngFor="let person of personsData" >
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="{{person.profilePicture}}" class="img-responsive" alt="..">
+                        <h4>{{person.firstName}} {{person.lastName}}</h4>
+                        <p>{{person.internalTitle}}</p>
+                        <div class="border"></div>
+                        <p>{{person.description}}</p>
+						<i class="fa fa-linkedin" aria-hidden="true"><a href="{{person.linkedInUrl}}"> {{person.firstName}} {{person.lastName}}</a></i>
+						<br />
+						<i class="fa fa-github" aria-hidden="true"><a href="{{person.githubUrl}}"> {{person.firstName}} {{person.lastName}}</a></i>
+						
+                    </div>
+                </div>
+            </div><!-- /.row -->            
+            
+        </div><!-- /.container -->
+    </section>
+    <!-- End About Us Section -->
+    
+   

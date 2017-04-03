@@ -1,0 +1,138 @@
+.team-member-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#team-section {
+	background-color: #ffffff;
+	box-shadow: 0 0 3px #ddd;
+	padding: 30px;
+}
+
+.team-member{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+
+
+.team-member .team-details {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #111;
+    padding: 0 2px;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.team-member .team-details h4 {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-size: 22px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+}
+
+.team-member .team-details .designation {
+    padding-bottom: 10%;
+    font-size: 16px;
+}
+
+
+.team-member .team-details li {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.team-member .team-details li a {
+    padding: 8px 12px;
+    background: #111;
+    border: 1px solid #111;
+    color: #fff;
+    font-size: 15px;
+}
+
+.team-member .team-details li:hover a {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+.team-details h4,
+.team-details .designation,
+.team-details p,
+.team-details li{
+    -webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+.team-member:hover .team-details h4,
+.team-member:hover .team-details .designation,
+.team-member:hover .team-details p,
+.team-member:hover .team-details li {
+    -webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.team-member:hover .team-details {
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+}
+
+.team-member:hover .team-details h4 {
+    -webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.team-member:hover .team-details .designation {
+    -webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.team-member:hover .team-details .description {
+    -webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.team-member:hover .team-details li:nth-child(n+1) {
+    -webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.team-member:hover .team-details li:nth-child(n+2) {
+    -webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.team-member:hover .team-details li:nth-child(n+3) {
+    -webkit-transition-delay: 0.35s;
+	transition-delay: 0.35s;
+}
+
+.team-member:hover .team-details li:nth-child(n+4) {
+    -webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.team-member:hover .team-details li:nth-child(n+5) {
+    -webkit-transition-delay: 0.45s;
+	transition-delay: 0.45s;
+}
+
+.owl-controls {
+    margin-top: 35px !important;
+}
