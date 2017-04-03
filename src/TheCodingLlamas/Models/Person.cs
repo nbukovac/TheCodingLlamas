@@ -30,7 +30,7 @@ namespace TheCodingLlamas.Models
         [Phone]
         public string PhoneNumber { get; set; }
         [Required]
-        public string RealTitle { get; set; }
+        public string Description { get; set; }
         [Required]
         public string InternalTitle { get; set; }
         [Required]
@@ -45,7 +45,7 @@ namespace TheCodingLlamas.Models
         }
 
         public Person(string firstName, string lastName, int year, string college, string linkedInUrl,
-            string githubUrl, string email, string phoneNumber, string realTitle, string internalTitle,
+            string githubUrl, string email, string phoneNumber, string description, string internalTitle,
             string profilePicture)
         {
             Id = Guid.NewGuid();
@@ -57,9 +57,12 @@ namespace TheCodingLlamas.Models
             GithubUrl = githubUrl;
             Email = email;
             PhoneNumber = phoneNumber;
-            RealTitle = realTitle;
+            Description = description;
             InternalTitle = internalTitle;
             ProfilePicture = profilePicture;
+
+            Projects = new List<Project>();
+            Technologies = new List<Technology>();
         }
     }
 }

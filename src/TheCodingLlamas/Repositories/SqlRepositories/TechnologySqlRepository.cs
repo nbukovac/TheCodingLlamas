@@ -54,6 +54,7 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
             Insert(new Technology(".*Script"));
             Insert(new Technology("Swift"));
             Insert(new Technology("Bash"));
+            Insert(new Technology("PHP"));
         }
 
     }

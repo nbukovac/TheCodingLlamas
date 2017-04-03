@@ -20,14 +20,52 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
 
         private void Seed()
         {
-            Insert(new Person("Nikola", "Bukovac", 4, 
-                "Fakultet elektrotehnike i računarstva", "", 
-                "https://github.com/nbukovac", "nikola.bukovac@outlook.com" , 
-                "+385912371969", "bacc.ing.comp.", "code monkey", ""));
-            Insert(new Person("Nikola", "Miličić", 4, "Fakultet elektrotehnike i računarstva",
-                "", "", "", "", "", "bacc.ing.comp.", ""));
-            Insert(new Person("Brigita", "Vrbanec", 4, "Fakultet elektrotehnike i računarstva",
-                "", "", "", "", "bacc.ing.comp.", "", ""));
+            var bukovac = new Person("Nikola", "Bukovac", 4,
+                "Fakultet elektrotehnike i računarstva", "https://www.linkedin.com/in/nikola-bukovac-ab017b120/",
+                "https://github.com/nbukovac", "nikola.bukovac@outlook.com",
+                "+385912371969",
+                "Nikola pulls classes and methods out of his sleeve and can easily turn any idea into code.",
+                "Code monkey", "assets/images/bukovac.jpg");
+            bukovac.Technologies.AddRange(new List<Technology>()
+            {
+                new Technology("C#"),
+                new Technology("Java"),
+                new Technology("Bash"),
+                new Technology("Python"),
+                new Technology("Swift"),
+                new Technology("C++")
+            });
+            bukovac.Projects.AddRange(new List<Project>());
+            Insert(bukovac);
+
+            var milicic = new Person("Nikola", "Miličić", 4, "Fakultet elektrotehnike i računarstva",
+                "https://www.linkedin.com/in/nikola-miličić-33bab263/", "https://github.com/NMilicic",
+                "", "", 
+                "Nikola is our C# master, but he can work magic with pretty much anything you throw his way.",
+                "C# guru",
+                "assets/images/milicic.jpg");
+            milicic.Technologies.AddRange(new List<Technology>()
+            {
+                new Technology(".*Script"),
+                new Technology("C#"),
+                new Technology("Bash")
+            });
+            milicic.Projects.AddRange(new List<Project>());
+            Insert(milicic);
+
+            var vrbanec = new Person("Brigita", "Vrbanec", 4, "Fakultet elektrotehnike i računarstva",
+                "https://www.linkedin.com/in/bvrbanec/", "https://github.com/bvrbanec",
+                "", "", "Brigita is the mastermind behind our projects but can also produce code if needed.",
+                "Evil mastermind", "assets/images/vrbanec.jpg");
+            vrbanec.Technologies.AddRange(new List<Technology>()
+            {
+                new Technology("C#"),
+                new Technology("Bash"),
+                new Technology("PHP"),
+                new Technology("Swift")
+            });
+            vrbanec.Projects.AddRange(new List<Project>());
+            Insert(vrbanec);
         }
 
         public Task<List<Person>> GetAllPersons()
