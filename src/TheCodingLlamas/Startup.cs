@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using TheCodingLlamas.Models;
+using Microsoft.EntityFrameworkCore;
+using TheCodingLlamas.Repositories;
+using TheCodingLlamas.Repositories.SqlRepositories;
 
 namespace TheCodingLlamas
 {
@@ -27,6 +31,12 @@ namespace TheCodingLlamas
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<CodingLlamasDbContext>(opt => opt.UseInMemoryDatabase());
+
+            services.AddScoped<IPersonRepository, PersonSqlRepository>();
+            services.AddScoped<ITechnologyRepository, TechnologySqlRepository>();
+            services.AddScoped<IProjectRepository, ProjectSqlRepository>();
+
             // Add framework services.
             services.AddMvc();
         }
