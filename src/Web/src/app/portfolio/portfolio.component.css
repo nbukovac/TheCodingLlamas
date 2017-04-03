@@ -172,5 +172,5 @@ and (min-width : 551px){
 }
 
 .portfolio-caption a.link-2 i {
-    left: 50%;
+    left: calc(50% - 24px);
 }

@@ -14,99 +14,18 @@
                     
                     <!-- Start Portfolio items -->
                     <ul id="portfolio-list">
-                         <li>
+                         <li *ngFor="let project of projects" >
                             <div class="portfolio-item">
-                                <img src="assets/images/lego.jpg" class="img-responsive" alt="" />
+                                <img src="{{project.pictureUrl}}" class="img-responsive" alt="" />
                                 <div class="portfolio-caption">
-                                    <h4>Lego Master</h4>
-                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                    <a href="https://github.com/NMilicic/MasterBuilders" class="link-2"><i class="fa fa-github"></i></a>
+                                    <h4>{{project.name}}</h4>
+                                    <a href="{{project.githubUrl}}" class="link-2"><i class="fa fa-github"></i></a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="portfolio-item">
-                                <img src="assets/images/portfolio/port-2.jpg" class="img-responsive" alt="" />
-                                <div class="portfolio-caption">
-                                    <h4>Portfolio Title</h4>
-                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="portfolio-item">
-                                <img src="assets/images/portfolio/port-3.jpg" class="img-responsive" alt="" />
-                                <div class="portfolio-caption">
-                                    <h4>Portfolio Title</h4>
-                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="portfolio-item">
-                                <img src="assets/images/portfolio/port-4.jpg" class="img-responsive" alt="" />
-                                <div class="portfolio-caption">
-                                    <h4>Portfolio Title</h4>
-                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="portfolio-item">
-                                <img src="assets/images/portfolio/port-6.jpg" class="img-responsive" alt="" />
-                                <div class="portfolio-caption">
-                                    <h4>Portfolio Title</h4>
-                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="portfolio-item">
-                                <img src="assets/images/portfolio/port-1.jpg" class="img-responsive" alt="" />
-                                <div class="portfolio-caption">
-                                    <h4>Portfolio Title</h4>
-                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        
-                            
+                        </li>    
                     </ul>
                     <!-- End Portfolio items -->
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Portfolio Section -->
-    
-    <!-- Start Portfolio Modal Section -->
-    <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container">
-                <div class="row">
-                    <div class="section-title text-center">
-                        <h2>Project title</h2>
-                        <p>Project description</p>
-                        <p>Technologies</p>
-						<a>github</a>
-						<br />
-						<a>live</a>
-                    </div>
-                </div>
-            </div>                
-        </div>
-    </div>
-    <!-- End Portfolio Modal Section -->
-   
+    </section>   
