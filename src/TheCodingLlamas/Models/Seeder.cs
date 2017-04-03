@@ -83,8 +83,15 @@ namespace TheCodingLlamas.Models
 
             var projects = new List<Project>
             {
-                new Project("Lego Master", "", 2016, "assets/images/lego.jpg", "",
-                    "https://github.com/NMilicic/MasterBuilders", milicic.Id)
+                new Project("Teletonne", "", 2015, "assets/images/telegram.jpg", "", "https://github.com/mrPjer/tgBB10", vrbanec.Id),
+                new Project("Ministry website", "", 2015, "assets/images/zoidberg.png", "", "https://github.com/mherceg/zoidberg", vrbanec.Id),
+                new Project("GuessWhere", "", 2015, "assets/images/guess.jpg", "", "https://github.com/marinabre/PPiJ_Projekt", vrbanec.Id),
+                new Project("Lego Master", "", 2016, "assets/images/lego.jpg", "", "https://github.com/NMilicic/MasterBuilders", milicic.Id),
+                new Project("HashCode2016","", 2016 ,"assets/images/hash.jpg", "", "https://github.com/bvrbanec/HashCode2016", vrbanec.Id),
+                new Project("Chat App", "", 2017, "assets/images/chat.png", "", "https://github.com/NMilicic/ChatApp", milicic.Id),
+                new Project("HashCode2017", "", 2017,  "assets/images/hash.jpg", "", "https://github.com/bvrbanec/HashCode2017", bukovac.Id),
+                new Project("News portal", "", 2017, "assets/images/news.jpg", "", "https://github.com/nbukovac/NewsPortal", bukovac.Id),
+                new Project("Coding Llamas portfolio", "assets/images/llama.jpeg", 2017, "assets/images/llama.jpeg", "", "https://github.com/nbukovac/TheCodingLlamas", bukovac.Id)
             };
 
             dbContext.Projects.AddRange(projects);
