@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.CodeAnalysis.Emit;
 using Microsoft.EntityFrameworkCore;
 using TheCodingLlamas.Models;
 
@@ -10,7 +9,6 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
 {
     public class ProjectSqlRepository : IProjectRepository
     {
-
         private readonly CodingLlamasDbContext _dbContext;
 
         public ProjectSqlRepository(CodingLlamasDbContext dbContext)
@@ -35,17 +33,20 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
 
         public void Insert(Project project)
         {
-            throw new NotImplementedException();
+            _dbContext.Add(project);
+            _dbContext.SaveChanges();
         }
 
         public void Update(Project project)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(project).State = EntityState.Modified;
+            _dbContext.SaveChanges();
         }
 
         public void Delete(Guid projectId)
         {
-            throw new NotImplementedException();
+            _dbContext.Projects.Remove(GetProjectById(projectId));
+            _dbContext.SaveChanges();
         }
     }
 }

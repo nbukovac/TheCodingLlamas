@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TheCodingLlamas.Models
 {
@@ -9,7 +6,6 @@ namespace TheCodingLlamas.Models
     {
         public static void SeedData(CodingLlamasDbContext dbContext)
         {
-
             // Technologies
 
             var technologies = new List<Technology>
@@ -35,7 +31,7 @@ namespace TheCodingLlamas.Models
                 "C# guru",
                 "assets/images/milicic.jpg");
 
-            var tempTech = new List<Technology>()
+            var tempTech = new List<Technology>
             {
                 technologies[0],
                 technologies[2],
@@ -62,8 +58,6 @@ namespace TheCodingLlamas.Models
             vrbanec.Technologies.Add(technologies[5]);
             vrbanec.Technologies.Add(technologies[6]);
 
-            //vrbanec.Projects.Add();
-
             dbContext.Persons.Add(vrbanec);
 
 
@@ -82,19 +76,15 @@ namespace TheCodingLlamas.Models
             bukovac.Technologies.Add(technologies[5]);
             bukovac.Technologies.Add(technologies[6]);
 
-            //bukovac.Projects.Add();
-
             dbContext.Persons.Add(bukovac);
-
-
 
 
             //Projects
 
-            var projects = new List<Project>()
+            var projects = new List<Project>
             {
                 new Project("Lego Master", "", 2016, "assets/images/lego.jpg", "",
-                "https://github.com/NMilicic/MasterBuilders", milicic.Id),
+                    "https://github.com/NMilicic/MasterBuilders", milicic.Id)
             };
 
             dbContext.Projects.AddRange(projects);

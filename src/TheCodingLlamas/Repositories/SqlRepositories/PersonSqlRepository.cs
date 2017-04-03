@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.CodeAnalysis.Emit;
 using Microsoft.EntityFrameworkCore;
 using TheCodingLlamas.Models;
 
@@ -10,7 +9,6 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
 {
     public class PersonSqlRepository : IPersonRepository
     {
-
         private readonly CodingLlamasDbContext _dbContext;
 
         public PersonSqlRepository(CodingLlamasDbContext dbContext)

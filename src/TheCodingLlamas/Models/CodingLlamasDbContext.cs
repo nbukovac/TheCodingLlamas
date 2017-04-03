@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace TheCodingLlamas.Models
 {
-    public class CodingLlamasDbContext: DbContext
+    public class CodingLlamasDbContext : DbContext
     {
         public CodingLlamasDbContext(DbContextOptions<CodingLlamasDbContext> options)
             : base(options)

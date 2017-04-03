@@ -49,17 +49,5 @@ namespace TheCodingLlamas.Repositories.SqlRepositories
             _dbContext.SaveChanges();
         }
 
-
-        private void Seed()
-        {
-            Insert(new Technology("C#"));
-            Insert(new Technology("Java"));
-            Insert(new Technology("Python"));
-            Insert(new Technology(".*Script"));
-            Insert(new Technology("Swift"));
-            Insert(new Technology("Bash"));
-            Insert(new Technology("PHP"));
-        }
-
     }
 }
