@@ -83,15 +83,15 @@ namespace TheCodingLlamas.Models
 
             var projects = new List<Project>
             {
-                new Project("Teletonne", "assets/images/telegram.jpg", 2015, "", "https://github.com/mrPjer/tgBB10", vrbanec.Id),
-                new Project("Ministry website", "assets/images/zoidberg.png", 2015, "", "https://github.com/mherceg/zoidberg", vrbanec.Id),
-                new Project("GuessWhere", "assets/images/guess.jpg", 2015, "", "https://github.com/marinabre/PPiJ_Projekt", vrbanec.Id),
-                new Project("Lego Master", "assets/images/lego.jpg", 2016, "assets/images/lego.jpg", "", "https://github.com/NMilicic/MasterBuilders", milicic.Id),
-                new Project("HashCode2016", "assets/images/hash.jpg", 2016,  "assets/images/hash.jpg", "https://github.com/bvrbanec/HashCode2016", vrbanec.Id),
-                new Project("Chat App", "assets/images/chat.png", 2017, "assets/images/chat.png", "", "https://github.com/NMilicic/ChatApp", milicic.Id),
-                new Project("HashCode2017", "assets/images/hash.jpg", 2017,  "assets/images/hash.jpg", "https://github.com/bvrbanec/HashCode2017", bukovac.Id),
-                new Project("News portal", 2017, "assets/images/news.jpg", "https://github.com/nbukovac/NewsPortal", bukovac.Id),
-                new Project("Coding Llamas portfolio", 2017, "assets/images/llama.jpeg", "https://github.com/nbukovac/TheCodingLlamas", bukovac.Id)
+                new Project("Teletonne", "", 2015, "assets/images/telegram.jpg", "", "https://github.com/mrPjer/tgBB10", vrbanec.Id),
+                new Project("Ministry website", "", 2015, "assets/images/zoidberg.png", "", "https://github.com/mherceg/zoidberg", vrbanec.Id),
+                new Project("GuessWhere", "", 2015, "assets/images/guess.jpg", "", "https://github.com/marinabre/PPiJ_Projekt", vrbanec.Id),
+                new Project("Lego Master", "", 2016, "assets/images/lego.jpg", "", "https://github.com/NMilicic/MasterBuilders", milicic.Id),
+                new Project("HashCode2016","", 2016 ,"assets/images/hash.jpg", "", "https://github.com/bvrbanec/HashCode2016", vrbanec.Id),
+                new Project("Chat App", "", 2017, "assets/images/chat.png", "", "https://github.com/NMilicic/ChatApp", milicic.Id),
+                new Project("HashCode2017", "", 2017,  "assets/images/hash.jpg", "", "https://github.com/bvrbanec/HashCode2017", bukovac.Id),
+                new Project("News portal", "", 2017, "assets/images/news.jpg", "", "https://github.com/nbukovac/NewsPortal", bukovac.Id),
+                new Project("Coding Llamas portfolio", "assets/images/llama.jpeg", 2017, "assets/images/llama.jpeg", "", "https://github.com/nbukovac/TheCodingLlamas", bukovac.Id)
             };
 
             dbContext.Projects.AddRange(projects);
