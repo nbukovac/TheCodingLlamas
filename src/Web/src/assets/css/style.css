@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    color: #28ABE3;
+    color: #edb40b;
 }
 
 a:hover,
@@ -104,8 +104,8 @@ li {
     text-transform: uppercase;
     font-weight: 300;
     color: #fff;
-    border-color: #28ABE3;
-    background-color: #28ABE3;
+    border-color: #edb40b;
+    background-color: #edb40b;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     -o-border-radius:3px;
@@ -122,14 +122,14 @@ li {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    border-color: #28ABE3;
-    background-color: #28ABE3;
+    border-color: #edb40b;
+    background-color: #edb40b;
     //background-color: none !important;
 }
 
 .btn-circle {
-    border-color: #28ABE3;
-    background-color: #28ABE3;
+    border-color: #edb40b;
+    background-color: #edb40b;
     color: #fff;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -594,7 +594,7 @@ li {
 }
 
 .call-to-action h1 strong {
-    color: #28ABE3;
+    color: #edb40b;
     font-weight: 600;
 }
 
@@ -629,7 +629,7 @@ li {
 }
 
 .latest-post h4 {
-    color: #28ABE3;
+    color: #edb40b;
     padding-top: 20px;
     padding-bottom: 5px;
 }
@@ -660,7 +660,7 @@ li {
 }
 
 .latest-post .post-details li i {
-    color: #28ABE3;
+    color: #edb40b;
     padding-right: 5px;
 }
 
@@ -709,7 +709,7 @@ li {
 .client-section {
     padding-top: 80px;
     padding-bottom: 40px;
-    background-color: #28ABE3;
+    background-color: #edb40b;
 }
 
 .client-section .section-title h2 {
@@ -833,7 +833,7 @@ footer {
     //margin-top: 100px;
     padding: 25px 0;
     background: #111;
-    border-top: 2px solid #28ABE3;
+    border-top: 2px solid #edb40b;
 }
 
 .copyright {
@@ -850,7 +850,7 @@ footer {
 .footer-social li a {
     padding: 8px;
     color: #fff;
-    background: #28ABE3;
+    background: #edb40b;
 }
 
 .footer-social li i {

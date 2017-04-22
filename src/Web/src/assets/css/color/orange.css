@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+
+.navbar-default .navbar-brand {
+    color: #edb40b;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #edb40b;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #edb40b;
+    background-color: #edb40b;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #edb40b;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #edb40b;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #edb40b;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: #edb40b;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+	color: #edb40b;
+}
+
+.menu-wrap .logo {
+    color: #edb40b;
+}
+
+.menu-button {
+    background: #edb40b;
+}
+
+.header .intro-text h1 span {
+    color: #edb40b;
+}
+
+.main-title strong {
+    color: #edb40b;
+}
+
+.portfolio-caption a i {
+    color: #edb40b;
+}
+
+
+.welcome-section:hover .border {
+    border-color: #edb40b;
+}
+
+.welcome-section:hover h4 {
+    color: #edb40b;
+}
+
+.about-text li i {
+    color: #edb40b;
+}
+
+.about-us-section-2 .carousel-indicators li,
+.project-image .carousel-indicators li {
+	border: 2px solid #edb40b !important;
+}
+
+.about-us-section-2 .carousel-indicators .active,
+.project-image .carousel-indicators .active {
+	background-color: #edb40b;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	background: #edb40b;
+}
+
+
+.team-member .team-details {
+    background-color: rgba(237, 180, 11, 0.8);
+}
+
+.owl-theme .owl-controls .owl-page.active{
+    background-color: #edb40b;
+}
+
+.contact .form-control:focus {
+    border-color: #edb40b;
+    box-shadow: none;
+}
+
+
+
+.team-details li a {
+    background: #edb40b;
+}
+
+.progress-bar {
+    background: #edb40b;
+}
+
+
+.pricing-tables .pricing-table.highlight-plan .plan-name {
+    background: #edb40b;
+}
+
+.pricing-tables .pricing-table.highlight-plan .plan-signup {
+    background: #edb40b;
+}
+
+
+#main-slide .slider-content h1 strong {
+    color: #edb40b;
+}
+
+.latest-post .post-details .date {
+    background: rgba(237, 180, 11, 0.8);
+}
+
+.custom-tab .nav-tabs.nav-justified {
+    background: #edb40b;
+}
+
+.plan-name {
+    background: #edb40b;
+}
+
+.plan-signup {
+    background: #edb40b;
+}
+
+.dot1, .dot2 {
+    background-color: #edb40b;
+}
