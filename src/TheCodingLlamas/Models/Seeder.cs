@@ -91,7 +91,10 @@ namespace TheCodingLlamas.Models
                 new Project("Chat App", "", 2017, "assets/images/chat.png", "", "https://github.com/NMilicic/ChatApp", milicic.Id),
                 new Project("HashCode2017", "", 2017,  "assets/images/hash.jpg", "", "https://github.com/bvrbanec/HashCode2017", bukovac.Id),
                 new Project("News portal", "", 2017, "assets/images/news.jpg", "", "https://github.com/nbukovac/NewsPortal", bukovac.Id),
-                new Project("Coding Llamas portfolio", "assets/images/llama.jpeg", 2017, "assets/images/llama.jpeg", "", "https://github.com/nbukovac/TheCodingLlamas", bukovac.Id)
+                new Project("Coding Llamas portfolio", "", 2017, "assets/images/llama.jpeg", "", "https://github.com/nbukovac/TheCodingLlamas", bukovac.Id),
+                new Project("Apartmanko", "", 2017, "assets/images/robot.png", "", "https://github.com/nbukovac/LlamaTouristCompanion", bukovac.Id),
+                new Project("Find It", "", 2017, "assets/images/guess.jpg", "", "https://github.com/nbukovac/LCCC2017", bukovac.Id),
+                new Project("Ultra Companion", "", 2017, "assets/images/ultra.png", "", "https://ultracompanion.psegina.com", vrbanec.Id)
             };
 
             dbContext.Projects.AddRange(projects);
